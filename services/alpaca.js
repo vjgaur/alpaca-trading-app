@@ -14,6 +14,7 @@ const alpacaApi = (baseURL = config.BASE_URL) => {
 
     const getAccount = () => api.get('v2/account')
     const getPositions = () => api.get('v2/positions')
+    const getActivities = () => api.get('/v2/activities')
 
     return {
         getAccount,
