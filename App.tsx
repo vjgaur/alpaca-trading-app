@@ -1,4 +1,4 @@
-import { AppLoading } from 'expo';
+import AppLoading from 'expo-app-loading'
 import { Asset } from 'expo-asset';
 import * as Font from 'expo-font';
 import React, { useState } from 'react';
@@ -7,7 +7,7 @@ import { Ionicons } from '@expo/vector-icons';
 
 import AppNavigator from './navigation/AppNavigator';
 
-export default function App(props) {
+export default function App(props:any) {
   const [isLoadingComplete, setLoadingComplete] = useState(false);
 
   if (!isLoadingComplete && !props.skipLoadingScreen) {
